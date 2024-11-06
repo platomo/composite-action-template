@@ -1,25 +1,25 @@
-# [Name der Action]
+# [Action Name]
 
-Diese GitHub-Action [beschreibt, was die Action tut].
+This GitHub Action [describes what the Action does].
 
-## Beschreibung
+## Description
 
-Diese Action ist nützlich für [spezifischen Anwendungsfall der Action beschreiben]. Sie ermöglicht es [kurze Erläuterung der wichtigsten Funktionen und Schritte der Action].
+This Action is useful for [describe specific use case of the Action]. It enables [brief explanation of key functions and steps of the Action].
 
-## Eingaben
+## Inputs
 
-| Name              | Beschreibung                                                     | Erforderlich | Standardwert |
-|-------------------|------------------------------------------------------------------|--------------|--------------|
-| `input-name`      | Beschreibung des Eingabewerts                                    | Ja/Nein      | [Standardwert, falls zutreffend] |
-| `input-name`      | Beschreibung des Eingabewerts                                    | Ja/Nein      | [Standardwert, falls zutreffend] |
-| ...               | ...                                                              | ...          | ...          |
+| Name              | Description                                           | Required   | Default        |
+|-------------------|-------------------------------------------------------|------------|----------------|
+| `input-name`      | Description of the input value                        | Yes/No     | [Default value, if applicable] |
+| `input-name`      | Description of the input value                        | Yes/No     | [Default value, if applicable] |
+| ...               | ...                                                   | ...        | ...            |
 
-## Verwendung
+## Usage
 
-Erstellen Sie eine Workflow-Datei (z. B. `.github/workflows/[workflow-name].yml`) und verwenden Sie diese Action wie folgt:
+Create a workflow file (e.g., `.github/workflows/[workflow-name].yml`) and use this Action as follows:
 
 ```yaml
-name: [Name des Workflows]
+name: [Workflow Name]
 
 on:
   push:
@@ -34,19 +34,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: [Name der Action]
+      - name: [Action Name]
         uses: ./
         with:
-          input-name: "[Beispielwert]"
-          input-name: "[Beispielwert]"
+          input-name: "[Example value]"
+          input-name: "[Example value]"
+
 ```
 
-## Schritte im Workflow
+## Workflow Steps
 
-    Installiere pypa/build: Installiert das build-Paket, das für den Bau des Python-Pakets benötigt wird.
-    Baue ein Rad und eine Quell-Tarball: Baut das Paket und erstellt eine .whl- und eine .tar.gz-Datei im dist/-Ordner.
-    Veröffentliche Paket auf TestPyPI: Nutzt die gh-action-pypi-publish, um die Paketdateien auf das angegebene TestPyPI-Repository hochzuladen.
+    Install pypa/build: Installs the build package, required for building the Python package.
+    Build Wheel and Source Tarball: Builds the package and creates both .whl and .tar.gz files in the dist/ folder.
+    Publish Package to TestPyPI: Uses gh-action-pypi-publish to upload the package files to the specified TestPyPI repository.
 
-## Erforderliche Berechtigungen
+## Required Permissions
 
-Um die Action erfolgreich auszuführen, muss ein Authentifizierungstoken in den Repository-Geheimnissen (secrets) gespeichert werden, um das Paket auf TestPyPI zu veröffentlichen.
+To successfully run the Action, an authentication token must be stored in the repository secrets (secrets) to publish the package to TestPyPI.
