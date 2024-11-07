@@ -42,6 +42,8 @@ jobs:
 ```
 
 ## Workflow Steps
+List the steps for that the workflow does
+Example:
 
 Install pypa/build: Installs the build package, required for building the Python package.
 Build Wheel and Source Tarball: Builds the package and creates both .whl and .tar.gz files in the dist/ folder.
@@ -49,4 +51,4 @@ Publish Package to TestPyPI: Uses gh-action-pypi-publish to upload the package f
 
 ## Required Permissions
 
-To successfully run the Action, an authentication token must be stored in the repository secrets (secrets) to publish the package to TestPyPI.
+List the required Permissions
