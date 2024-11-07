@@ -8,11 +8,11 @@ This Action is useful for [describe specific use case of the Action]. It enables
 
 ## Inputs
 
-| Name              | Description                                           | Required   | Default        |
-|-------------------|-------------------------------------------------------|------------|----------------|
-| `input-name`      | Description of the input value                        | Yes/No     | [Default value, if applicable] |
-| `input-name`      | Description of the input value                        | Yes/No     | [Default value, if applicable] |
-| ...               | ...                                                   | ...        | ...            |
+| Name         | Description                    | Required | Default                        |
+| ------------ | ------------------------------ | -------- | ------------------------------ |
+| `input-name` | Description of the input value | Yes/No   | [Default value, if applicable] |
+| `input-name` | Description of the input value | Yes/No   | [Default value, if applicable] |
+| ...          | ...                            | ...      | ...                            |
 
 ## Usage
 
