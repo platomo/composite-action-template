@@ -43,9 +43,9 @@ jobs:
 
 ## Workflow Steps
 
-    Install pypa/build: Installs the build package, required for building the Python package.
-    Build Wheel and Source Tarball: Builds the package and creates both .whl and .tar.gz files in the dist/ folder.
-    Publish Package to TestPyPI: Uses gh-action-pypi-publish to upload the package files to the specified TestPyPI repository.
+Install pypa/build: Installs the build package, required for building the Python package.
+Build Wheel and Source Tarball: Builds the package and creates both .whl and .tar.gz files in the dist/ folder.
+Publish Package to TestPyPI: Uses gh-action-pypi-publish to upload the package files to the specified TestPyPI repository.
 
 ## Required Permissions
 
