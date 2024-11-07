@@ -39,7 +39,6 @@ jobs:
         with:
           input-name: "[Example value]"
           input-name: "[Example value]"
-
 ```
 
 ## Workflow Steps
